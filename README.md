@@ -1,10 +1,10 @@
-# Wack-A-Penguin
+# Whack-A-Penguin
 <p align="center">
-  <img src="demo/app-icon.png " alt="Wack-A-Penguin application icon"
-	  title="Wack-A-Penguin application icon" align="center" width="200" height="200" />
+  <img src="demo/app-icon.png " alt="Whack-A-Penguin application icon"
+	  title="Whack-A-Penguin application icon" align="center" width="200" height="200" />
 </p>
 </br>
-Based on the wack-a-mole game.
+Based on the whack-a-mole game.
 
 ## Examples within this code
 N/A

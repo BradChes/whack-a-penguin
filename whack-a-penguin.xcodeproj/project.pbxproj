@@ -14,10 +14,11 @@
 		C6472C62242CF2B900DA8C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6472C60242CF2B900DA8C18 /* Main.storyboard */; };
 		C6472C64242CF2BB00DA8C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6472C63242CF2BB00DA8C18 /* Assets.xcassets */; };
 		C6472C67242CF2BB00DA8C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6472C65242CF2BB00DA8C18 /* LaunchScreen.storyboard */; };
+		C66DFD94242CF88E0068A433 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66DFD93242CF88E0068A433 /* WhackSlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C6472C53242CF2B900DA8C18 /* Wack-A-Penguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wack-A-Penguin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6472C53242CF2B900DA8C18 /* Whack-A-Penguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whack-A-Penguin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6472C56242CF2B900DA8C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6472C58242CF2B900DA8C18 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		C6472C5C242CF2B900DA8C18 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		C6472C68242CF2BB00DA8C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6472C6E242CF39E00DA8C18 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
 		C6472C6F242CF39E00DA8C18 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		C66DFD93242CF88E0068A433 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +46,7 @@
 		C6472C4A242CF2B900DA8C18 = {
 			isa = PBXGroup;
 			children = (
-				C6472C55242CF2B900DA8C18 /* wack-a-penguin */,
+				C6472C55242CF2B900DA8C18 /* whack-a-penguin */,
 				C6472C54242CF2B900DA8C18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +54,12 @@
 		C6472C54242CF2B900DA8C18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C6472C53242CF2B900DA8C18 /* Wack-A-Penguin.app */,
+				C6472C53242CF2B900DA8C18 /* Whack-A-Penguin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C6472C55242CF2B900DA8C18 /* wack-a-penguin */ = {
+		C6472C55242CF2B900DA8C18 /* whack-a-penguin */ = {
 			isa = PBXGroup;
 			children = (
 				C6472C56242CF2B900DA8C18 /* AppDelegate.swift */,
@@ -70,16 +72,17 @@
 				C6472C68242CF2BB00DA8C18 /* Info.plist */,
 				C6472C6F242CF39E00DA8C18 /* whack.caf */,
 				C6472C6E242CF39E00DA8C18 /* whackBad.caf */,
+				C66DFD93242CF88E0068A433 /* WhackSlot.swift */,
 			);
-			path = "wack-a-penguin";
+			path = "whack-a-penguin";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C6472C52242CF2B900DA8C18 /* wack-a-penguin */ = {
+		C6472C52242CF2B900DA8C18 /* whack-a-penguin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6472C6B242CF2BB00DA8C18 /* Build configuration list for PBXNativeTarget "wack-a-penguin" */;
+			buildConfigurationList = C6472C6B242CF2BB00DA8C18 /* Build configuration list for PBXNativeTarget "whack-a-penguin" */;
 			buildPhases = (
 				C6472C4F242CF2B900DA8C18 /* Sources */,
 				C6472C50242CF2B900DA8C18 /* Frameworks */,
@@ -89,9 +92,9 @@
 			);
 			dependencies = (
 			);
-			name = "wack-a-penguin";
+			name = "whack-a-penguin";
 			productName = "wack-a-penguin";
-			productReference = C6472C53242CF2B900DA8C18 /* Wack-A-Penguin.app */;
+			productReference = C6472C53242CF2B900DA8C18 /* Whack-A-Penguin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C6472C4E242CF2B900DA8C18 /* Build configuration list for PBXProject "wack-a-penguin" */;
+			buildConfigurationList = C6472C4E242CF2B900DA8C18 /* Build configuration list for PBXProject "whack-a-penguin" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C6472C52242CF2B900DA8C18 /* wack-a-penguin */,
+				C6472C52242CF2B900DA8C18 /* whack-a-penguin */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +151,7 @@
 			files = (
 				C6472C5D242CF2B900DA8C18 /* GameScene.swift in Sources */,
 				C6472C5F242CF2B900DA8C18 /* GameViewController.swift in Sources */,
+				C66DFD94242CF88E0068A433 /* WhackSlot.swift in Sources */,
 				C6472C57242CF2B900DA8C18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,13 +298,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P323FQSL2Z;
-				INFOPLIST_FILE = "wack-a-penguin/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/whack-a-penguin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.wack-a-penguin";
-				PRODUCT_NAME = "Wack-A-Penguin";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.whack-a-penguin";
+				PRODUCT_NAME = "Whack-A-Penguin";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -312,13 +316,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P323FQSL2Z;
-				INFOPLIST_FILE = "wack-a-penguin/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/whack-a-penguin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.wack-a-penguin";
-				PRODUCT_NAME = "Wack-A-Penguin";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.whack-a-penguin";
+				PRODUCT_NAME = "Whack-A-Penguin";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -327,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C6472C4E242CF2B900DA8C18 /* Build configuration list for PBXProject "wack-a-penguin" */ = {
+		C6472C4E242CF2B900DA8C18 /* Build configuration list for PBXProject "whack-a-penguin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6472C69242CF2BB00DA8C18 /* Debug */,
@@ -336,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6472C6B242CF2BB00DA8C18 /* Build configuration list for PBXNativeTarget "wack-a-penguin" */ = {
+		C6472C6B242CF2BB00DA8C18 /* Build configuration list for PBXNativeTarget "whack-a-penguin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6472C6C242CF2BB00DA8C18 /* Debug */,
