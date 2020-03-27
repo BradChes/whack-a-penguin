@@ -19,6 +19,7 @@
 		C66DFD96242E34F00068A433 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = C6472C6F242CF39E00DA8C18 /* whack.caf */; };
 		C66DFD98242E39FC0068A433 /* gameOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C66DFD97242E39A40068A433 /* gameOver.m4a */; };
 		C66DFD9A242E3C810068A433 /* smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = C66DFD99242E3C810068A433 /* smoke.sks */; };
+		C66DFD9C242E437A0068A433 /* mud.sks in Resources */ = {isa = PBXBuildFile; fileRef = C66DFD9B242E437A0068A433 /* mud.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C66DFD93242CF88E0068A433 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
 		C66DFD97242E39A40068A433 /* gameOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameOver.m4a; sourceTree = "<group>"; };
 		C66DFD99242E3C810068A433 /* smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smoke.sks; sourceTree = "<group>"; };
+		C66DFD9B242E437A0068A433 /* mud.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = mud.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				C6472C6E242CF39E00DA8C18 /* whackBad.caf */,
 				C66DFD93242CF88E0068A433 /* WhackSlot.swift */,
 				C66DFD99242E3C810068A433 /* smoke.sks */,
+				C66DFD9B242E437A0068A433 /* mud.sks */,
 			);
 			path = "whack-a-penguin";
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				C66DFD95242E34EE0068A433 /* whackBad.caf in Resources */,
 				C6472C62242CF2B900DA8C18 /* Main.storyboard in Resources */,
 				C6472C59242CF2B900DA8C18 /* GameScene.sks in Resources */,
+				C66DFD9C242E437A0068A433 /* mud.sks in Resources */,
 				C6472C64242CF2BB00DA8C18 /* Assets.xcassets in Resources */,
 				C6472C67242CF2BB00DA8C18 /* LaunchScreen.storyboard in Resources */,
 				C66DFD98242E39FC0068A433 /* gameOver.m4a in Resources */,

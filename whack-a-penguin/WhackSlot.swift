@@ -11,13 +11,14 @@ import SpriteKit
 
 class WhackSlot: SKNode {
     var charNode: SKSpriteNode!
+    var sprite: SKSpriteNode!
     var isVisible = false
     var isHit = false
     
     func configure(at position: CGPoint) {
         self.position = position
         
-        let sprite = SKSpriteNode(imageNamed: "whackHole")
+        sprite = SKSpriteNode(imageNamed: "whackHole")
         addChild(sprite)
         
         let cropNode = SKCropNode()
@@ -49,6 +50,18 @@ class WhackSlot: SKNode {
             charNode.texture = SKTexture(imageNamed: "penguinEvil")
             charNode.name = "charEnemy"
         }
+        
+        guard let mudNode = SKEmitterNode(fileNamed: "mud.sks") else { return }
+        mudNode.position = sprite.position
+        sprite.addChild(mudNode)
+        
+        let delay = SKAction.wait(forDuration: 0.25)
+        let notVisible = SKAction.run {
+            mudNode.removeFromParent()
+        }
+        
+        let sequence = SKAction.sequence([delay, notVisible])
+        charNode.run(sequence)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + (hideTime * 3.5)) { [weak self] in
             self?.hide()
