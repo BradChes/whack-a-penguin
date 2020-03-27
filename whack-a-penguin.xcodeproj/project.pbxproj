@@ -15,6 +15,8 @@
 		C6472C64242CF2BB00DA8C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6472C63242CF2BB00DA8C18 /* Assets.xcassets */; };
 		C6472C67242CF2BB00DA8C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6472C65242CF2BB00DA8C18 /* LaunchScreen.storyboard */; };
 		C66DFD94242CF88E0068A433 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66DFD93242CF88E0068A433 /* WhackSlot.swift */; };
+		C66DFD95242E34EE0068A433 /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = C6472C6E242CF39E00DA8C18 /* whackBad.caf */; };
+		C66DFD96242E34F00068A433 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = C6472C6F242CF39E00DA8C18 /* whack.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,13 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				C6472C56242CF2B900DA8C18 /* AppDelegate.swift */,
+				C6472C63242CF2BB00DA8C18 /* Assets.xcassets */,
 				C6472C58242CF2B900DA8C18 /* GameScene.sks */,
 				C6472C5C242CF2B900DA8C18 /* GameScene.swift */,
 				C6472C5E242CF2B900DA8C18 /* GameViewController.swift */,
-				C6472C60242CF2B900DA8C18 /* Main.storyboard */,
-				C6472C63242CF2BB00DA8C18 /* Assets.xcassets */,
-				C6472C65242CF2BB00DA8C18 /* LaunchScreen.storyboard */,
 				C6472C68242CF2BB00DA8C18 /* Info.plist */,
+				C6472C65242CF2BB00DA8C18 /* LaunchScreen.storyboard */,
+				C6472C60242CF2B900DA8C18 /* Main.storyboard */,
 				C6472C6F242CF39E00DA8C18 /* whack.caf */,
 				C6472C6E242CF39E00DA8C18 /* whackBad.caf */,
 				C66DFD93242CF88E0068A433 /* WhackSlot.swift */,
@@ -135,10 +137,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C66DFD95242E34EE0068A433 /* whackBad.caf in Resources */,
 				C6472C62242CF2B900DA8C18 /* Main.storyboard in Resources */,
 				C6472C59242CF2B900DA8C18 /* GameScene.sks in Resources */,
 				C6472C64242CF2BB00DA8C18 /* Assets.xcassets in Resources */,
 				C6472C67242CF2BB00DA8C18 /* LaunchScreen.storyboard in Resources */,
+				C66DFD96242E34F00068A433 /* whack.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
