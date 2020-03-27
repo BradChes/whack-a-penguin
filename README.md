@@ -14,4 +14,9 @@ Based on the whack-a-mole game.
 
 ## Demonstration
 Small demonstration as to what the game does when on device.
+</br>
+<p align="center">
+<img src="demo/whack-a-penguin.gif" alt="Application demonstration"
+	title="Whack-a-Penguin demonstration" width="600" height="450" />
+</p>
 
