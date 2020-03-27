@@ -11,13 +11,14 @@ import SpriteKit
 
 class WhackSlot: SKNode {
     var charNode: SKSpriteNode!
+    var sprite: SKSpriteNode!
     var isVisible = false
     var isHit = false
     
     func configure(at position: CGPoint) {
         self.position = position
         
-        let sprite = SKSpriteNode(imageNamed: "whackHole")
+        sprite = SKSpriteNode(imageNamed: "whackHole")
         addChild(sprite)
         
         let cropNode = SKCropNode()
@@ -50,6 +51,18 @@ class WhackSlot: SKNode {
             charNode.name = "charEnemy"
         }
         
+        guard let mudNode = SKEmitterNode(fileNamed: "mud.sks") else { return }
+        mudNode.position = sprite.position
+        sprite.addChild(mudNode)
+        
+        let delay = SKAction.wait(forDuration: 0.25)
+        let notVisible = SKAction.run {
+            mudNode.removeFromParent()
+        }
+        
+        let sequence = SKAction.sequence([delay, notVisible])
+        charNode.run(sequence)
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + (hideTime * 3.5)) { [weak self] in
             self?.hide()
         }
@@ -65,10 +78,15 @@ class WhackSlot: SKNode {
     func hit() {
         isHit = true
         
+        guard let smokeNode = SKEmitterNode(fileNamed: "smoke.sks") else { return }
+        smokeNode.position = charNode.position
+        addChild(smokeNode)
+       
         let delay = SKAction.wait(forDuration: 0.25)
         let hide = SKAction.moveBy(x: 0, y: -80, duration: 0.5)
         let notVisible = SKAction.run { [weak self] in
             self?.isVisible = false
+            smokeNode.removeFromParent()
         }
         let sequence = SKAction.sequence([delay, hide, notVisible])
         charNode.run(sequence)
