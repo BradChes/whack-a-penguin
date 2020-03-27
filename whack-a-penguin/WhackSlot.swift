@@ -65,7 +65,7 @@ class WhackSlot: SKNode {
     func hit() {
         isHit = true
         
-        guard let smokeNode = SKEmitterNode(fileNamed: "Smoke.sks") else { return }
+        guard let smokeNode = SKEmitterNode(fileNamed: "smoke.sks") else { return }
         smokeNode.position = charNode.position
         addChild(smokeNode)
        
