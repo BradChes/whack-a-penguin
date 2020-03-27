@@ -7,8 +7,10 @@
 Based on the whack-a-mole game.
 
 ## Examples within this code
-N/A
-
+- SKCropNode
+- SKTexture
+- asyncAfter()
+- Different SKAction types
 
 ## Demonstration
 Small demonstration as to what the game does when on device.
